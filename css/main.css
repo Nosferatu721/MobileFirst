@@ -29,7 +29,7 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 .header {
-  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
   color: white;
   padding: 2rem;
   display: flex;
@@ -72,4 +72,102 @@ html {
 }
 .btn-more .icon-btn-more {
   margin: 0 0.5rem;
+}
+
+.main {
+  padding: 4rem 2rem;
+  background: var(--off-white);
+}
+.principal {
+  text-align: center;
+}
+.principal figure {
+  width: 195px;
+  margin: 3rem auto;
+}
+.principal figure img {
+  max-width: 100%;
+  width: 100%;
+}
+.principal-text {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--warm-black);
+  margin-bottom: 2.4rem;
+}
+.principal-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+  margin-bottom: 4.8rem;
+}
+.principal .monedas {
+  color: var(--bitcoin-orange);
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+.principal .comisiones {
+  color: var(--secondary-blue);
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+.container-money {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  width: 200px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.151);
+  border-radius: 4px;
+}
+.container-money div {
+  padding: 1rem;
+  border: 1px solid ghostwhite;
+}
+.container-money div:nth-child(1) {
+  border-top-left-radius: 4px;
+}
+.container-money div:nth-child(2) {
+  border-top-right-radius: 4px;
+}
+.container-money div:nth-child(7) {
+  border-bottom-left-radius: 4px;
+}
+.container-money div:nth-child(8) {
+  border-bottom-right-radius: 4px;
+}
+.money-name {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #b5b0ac;
+}
+.money-value {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #757575;
+  font-weight: 400;
+}
+.update-monedas,
+.update-comi {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--soft-orange);
+}
+.update-comi {
+  background: var(--soft-blue);
+}
+.update-monedas p,
+.update-comi p {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
