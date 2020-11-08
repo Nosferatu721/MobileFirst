@@ -226,3 +226,96 @@ html {
   left: calc(50% - 20px);
   transform: rotateY(180deg);
 }
+
+/*  */
+
+.img-container {
+  width: 100%;
+  height: 50vh;
+  background: url(../img/bitcoinbaby2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-container p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--just-white);
+  text-align: center;
+  padding-top: 6rem;
+}
+
+/* Planes */
+
+.planes {
+  background: var(--off-white);
+}
+.planes h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--warm-black);
+  text-align: center;
+}
+.planes > p {
+  font-weight: 500;
+  color: #757575;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.card-plan {
+  position: relative;
+  width: 60%;
+  min-width: 230px;
+  max-width: 300px;
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  background: white;
+  color: var(--warm-black);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.card-plan .plan--title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0.5rem;
+}
+.card-plan .plan--price {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin: 0.8rem 0;
+}
+.card-plan .plan--text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #757575;
+  margin: 0.8rem 0;
+}
+.card-plan button {
+  background: #faf8f7;
+  border: 2px solid #f7931a;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--warm-black);
+  cursor: pointer;
+}
+
+.card-plan .box-recomendado {
+  position: absolute;
+  width: 100px;
+  top: -16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+  background: var(--bitcoin-orange);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
