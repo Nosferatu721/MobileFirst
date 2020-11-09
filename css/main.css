@@ -28,6 +28,10 @@ html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
+a {
+  text-decoration: none;
+}
+
 .header {
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
   color: white;
@@ -231,7 +235,7 @@ html {
 
 .img-container {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background: url(../img/bitcoinbaby2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,17 +268,29 @@ html {
   font-size: 1.4rem;
   text-align: center;
 }
+
+.cards-planes {
+  display: flex;
+  /* Para hacer el Slider :3 */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .card-plan {
   position: relative;
+  /* Para el Slider */
+  scroll-snap-align: center;
   width: 60%;
   min-width: 230px;
   max-width: 300px;
   padding: 2rem;
-  margin: 2rem auto;
+  margin: 4rem 2.5rem;
   text-align: center;
   background: white;
   color: var(--warm-black);
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 5px;
 }
 .card-plan .plan--title {
   font-size: 1.4rem;
@@ -285,6 +301,13 @@ html {
   font-size: 5.2rem;
   font-weight: 700;
   margin: 0.8rem 0;
+  position: relative;
+}
+.card-plan .plan--price span {
+  font-size: 1rem;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 40px);
 }
 .card-plan .plan--text {
   font-size: 1.2rem;
@@ -318,4 +341,36 @@ html {
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 5px;
+}
+
+/* Footer */
+
+.footer {
+  background: var(--bitcoin-orange);
+  color: var(--just-white);
+}
+.footer .container {
+  display: flex;
+}
+.footer .links {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.footer .links a {
+  margin: 0.2rem 0;
+  color: var(--just-white);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.footer .marca {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .marca img {
+  margin: 0.2rem 0;
 }
