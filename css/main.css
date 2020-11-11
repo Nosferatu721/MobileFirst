@@ -27,9 +27,12 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: var(--warm-black);
 }
 
 .header {
@@ -109,6 +112,19 @@ a {
   color: #757575;
   margin-bottom: 4.8rem;
 }
+.principal .cards-monedas {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.cards-monedas .card-cambio:last-child{
+  padding-right: 2rem;
+}
+.principal .card-cambio {
+  scroll-snap-align: center;
+  margin: 0 3rem;
+}
 .principal .monedas {
   color: var(--bitcoin-orange);
   font-size: 1.8rem;
@@ -162,6 +178,7 @@ a {
 }
 .update-monedas,
 .update-comi {
+  width: 230px;
   display: inline-block;
   margin: 2rem auto;
   padding: 1rem;
@@ -276,7 +293,10 @@ a {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
-
+.cards-planes .card-plan:nth-child(2) {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 .card-plan {
   position: relative;
   /* Para el Slider */
@@ -285,7 +305,7 @@ a {
   min-width: 230px;
   max-width: 300px;
   padding: 2rem;
-  margin: 4rem 2.5rem;
+  margin: 4rem 0;
   text-align: center;
   background: white;
   color: var(--warm-black);
